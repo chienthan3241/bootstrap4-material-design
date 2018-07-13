@@ -11,4 +11,9 @@ router.get('/datenschutz', function(req, res, next) {
   res.render('datenschutz', { title: 'Datenschutz' });
 });
 
+/* GET impressum. */
+router.get('/impressum', function(req, res, next) {
+  res.render('impressum', { title: 'Impressum' });
+});
+
 module.exports = router;

@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  .main.main-raised 
+    .section.section-basic
+      .container 
+        .jumbotron.jumbotron-no-bg
+          h1.display-4.text-primary Verantwortlich für diese Seite ist:
+          hr.my-4
+          br
+          .clear-fix
+          .card.card-nav-tabs
+            .card-header.card-header-primary
+              // colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger"
+              .nav-tabs-navigation
+                .nav-tabs-wrapper
+                  ul.nav.nav-tabs(data-tabs="tabs")
+                    li.nav-item
+                      a.nav-link.active.show(href="#profile" data-toggle="tab")
+                        i.material-icons face
+                        | Profile
+                        .ripple-container
+                    li.nav-item
+                      a.nav-link(href="#contact" data-toggle="tab")
+                        i.material-icons contact_mail
+                        | Adresse
+                        .ripple-container
+                    li.nav-item
+                      a.nav-link(href="#inhalt" data-toggle="tab")
+                        i.material-icons import_contacts
+                        | Inhalt
+                        .ripple-container
+            .card-body
+              .tab-content.text-center
+                #profile.tab-pane.active.show.text-left
+                  .info
+                    .icon.icon-primary
+                      i.material-icons chat
+                    h4.info-title Geschäftsführer:
+                    h6 Ulrich Drochner, Bühl
+                    h6 Rainer Mohr, Gaggenau
+                    h6 Dr. Jürgen Möbis-Wolf, Baden-Baden
+                #contact.tab-pane.text-left
+                  .info
+                    .icon.icon-primary
+                      i.material-icons place
+                    h4.info-title Baugruppe Bretagne GbR
+                    h6 Alfons-Deißler-Str. 18
+                    h6 77815 Bühl
+                    h6 info@cite-bretonen.de
+                #inhalt.tab-pane
+                  .info
+                    .icon.icon-primary
+                      i.material-icons folder_shared
+                    h4.info-title Inhaltlich Verantwortliche gemäß §10 (3) MDStV: Die Geschäftsführer des Vereins (Anschrift wie oben)
+          
+          p Kontaktmöglichkeiten entnehmen Sie bitte der Rubrik "Kontakt", welche das Impressum rechtlich und inhaltlich ergänzt.
+    
+      .container 
+        .jumbotron.jumbotron-no-bg
+          h1.display-4.text-primary Haftung für Homepageinhalte:
+          hr.my-4
+          h4 Alle Inhalte dieser Homepage wurden mit großer Sorgfalt erstellt. Richtigkeit, Aktualität und Vollständigkeit können wir jedoch nicht garantieren.
+      .container 
+        .jumbotron.jumbotron-no-bg
+          h1.display-4.text-primary Haftung für Links:
+          hr.my-4
+          h4 Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+
+          h4 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+
+          h4 Die Betreiber der Seiten sind bemüht, stets die Urheberrechte anderer zu beachten bzw. auf selbst erstellte sowie lizenzfreie Werke zurückzugreifen.
+
+          h4 Alle Rechte von Artikeln, die im Pessearchiv eingestellt sind, liegen bei den jeweiligen Zeitungsverlagen, Redaktionen oder Autoren. Die Veröffentlichung erfolgt auf ausdrückliche Genehmigung der Rechteinhaber. Weiterverbreitungen dürfen eventuell nur mit Zustimmunung der Rechteinhaber erfolgen.
+      .container 
+        .jumbotron.jumbotron-no-bg
+          h1.display-4.text-primary Datenschutz:
+          hr.my-4
+          h4 Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
