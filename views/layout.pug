@@ -1,0 +1,38 @@
+doctype html
+html(ng-app="app")
+  head
+    title= title
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Roboto|Roboto+Slab|Material+Icons")
+    link(rel="stylesheet" href="/stylesheets/font-awesome.css")
+    link(rel="stylesheet", href="/stylesheets/material-kit.min.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+  body
+
+    include nav
+    include slider
+    block header
+    block content
+
+    include footer
+
+// JQuery
+script(type="text/javascript" src="/javascripts/jquery.min.js")
+// popperjs
+script(type="text/javascript" src="/javascripts/popper.min.js")
+// material kit core
+script(type="text/javascript" src="/javascripts/bootstrap-material-design.min.js")
+script(type="text/javascript" src="/javascripts/moment.min.js")
+script(type="text/javascript" src="/javascripts/bootstrap-datetimepicker.js")
+script(type="text/javascript" src="/javascripts/nouislider.min.js")
+script(type="text/javascript" src="/javascripts/jquery.sharrre.js")
+// material kit bootstrap
+script(type="text/javascript" src="/javascripts/material-kit.min.js")
+// angular
+script(type="text/javascript" src="/javascripts/angular.js")
+// lodash
+script(type="text/javascript" src="/javascripts/lodash.js")
+// angular self
+script(type="text/javascript" src="/javascripts/main.js")
+// scripts self
+script(type="text/javascript" src="/javascripts/script.js")
+    
