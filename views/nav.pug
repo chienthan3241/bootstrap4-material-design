@@ -14,9 +14,19 @@ nav#sectionsNav.navbar.navbar-color-on-scroll.fixed-top.navbar-expand-lg.navbar-
         li.nav-item
           a.nav-link(href="/") Home
         li.nav-item
-          a.nav-link(href="#") Wir Bretonen
-        li.nav-item
-          a.nav-link(href="#") Unser Wohnprojekt
+          a.nav-link(href="#") Wir Bretonen (Private)
+        li.nav-item.dropdown
+          a.dropdown-toggle.nav-link(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            | Unser Wohnprojekt
+          .dropdown-menu
+            a.dropdown-item(href="/projekt") Allgemein
+            .dropdown-divider
+            a.dropdown-item(href="/baubeschreibung") Baubeschreibung
+            a.dropdown-item(href="#") Lageplan
+            a.dropdown-item(href="#") Gesamtansichten
+            .dropdown-divider
+            a.dropdown-item(href="#") Die Wohnungen
+          
         li.nav-item
           a.nav-link(href="#") Kontakt
         li.nav-item

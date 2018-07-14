@@ -26,4 +26,14 @@ router.get('/comming-soon', function(req, res, next) {
   res.render('comming-soon', { title: 'Comming soon' });
 });
 
+/* GET projekt. */
+router.get('/projekt', function(req, res, next) {
+  res.render('projekt', { title: 'Unsere Projekt' });
+});
+
+/* GET baubeschreibung. */
+router.get('/baubeschreibung', function(req, res, next) {
+  res.render('baubeschreibung', { title: 'Baubeschreibung' });
+});
+
 module.exports = router;

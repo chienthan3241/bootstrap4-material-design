@@ -1,0 +1,150 @@
+extends layout
+
+block content
+  .main.main-raised
+    .cd-section.section
+      .container
+        .title
+          h3 Gemeinschafts-Wohnanlage
+          hr
+          h4 Gemeinschaftswohnprojekt  Ufgau- / Breisgaustraße , 76532 Baden-Baden
+          hr
+          h4 Baubeschreibung gem.  § 7 LBOVVO
+          h5 (Im Rahmen der Bauvoranfrage ist die Baubeschreibung als vorläufig zu betrachten; konkrete Aussagen können erst mit der zu konstruktiven Details und Ausstattungen gemacht werden.)
+
+        #accordion.card-collapse(role="tablist" aria-multiselectable="true")
+          .card.card-plain
+            #headingOne.card-header(role="tab")
+              a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                | 1. Nutzung des Bauvorhabens
+                i.material-icons keyboard_arrow_down
+            #collapseOne.collapse.show(role="tabpanel" aria-labelledby="headingOne")
+              .card-body 
+                | Gegenstand der Planung ist ein Mehrfamilienhaus mit 26 Wohneinheiten unterschiedlicher Größe (62 - 121 m²) sowie einem Gemeinschaftsraum. Im Untergeschoss liegen die zu den Wohnungen gehörenden Kellerräume, die Funktionsräume der Haustechnik. Eine Tiefgarage mit 26 Stellplätzen und ein Fahrradraum für ca. 50 Fahrräder. Das Gebäude wird über ein Treppenhaus mit Aufzug und ein Laubengangsystem erschlossen und ist 
+                strong.text-warning in allen Bereichen barrierefrei.
+                |  Realisiert wird das Projekt von einer Baugemeinschaft (als Gesellschaft bürgerlichen Rechts), deren Mitglieder bis auf wenige Ausnahmen die Wohnungen selbst nutzen werden.
+          .card.card-plain
+            #headingTwo.card-header(role="tab")
+              a(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo")
+                | 2. Baukonstruktionen
+                i.material-icons keyboard_arrow_down
+            #collapseTwo.collapse.show(role="tabpanel" aria-labelledby="headingTwo")
+              .card-body
+                p
+                  i.material-icons minimize
+                  |  Das 
+                  strong Sockelgeschoss 
+                  | mit niveaugleichem Zugang  und Zufahrt von der Ufgaustraße wird in Massivbauweise in Stahlbeton ausgeführt.
+                p
+                  i.material-icons minimize
+                  |  Auf der STB-Decke des Untergeschosses werden die 
+                  strong.text-warning 3 Wohnebenen in Vollholzbauweise aus Brettsperrholz 
+                  | errichtet. Diese Konstruktion nach 
+                  strong.text-warning KfW 40-Standard 
+                  | betrifft alle tragenden Außen- und die 2-schaligen Wohnungstrennwände, desgleichen die tragenden Innenwände der Wohnungen. Auskragende Bauteile wie Laubengänge und Balkone werden in passender Weise ausgeführt.
+                p 
+                  i.material-icons minimize
+                  strong  Dachkonstruktion
+                  |  als Sparrendach mit Wärmedämmung nach KfW 40-Standard aus Mineral- oder Holzfaserplatten. Untersichten aus Profilholz (Fichte/Tanne) oder GK-Beplankung. Aus konstruktiven Gründen können zur Längsaussteifung auch Dach-elemente aus Brettsperrholz in Frage kommen, auf denen dann das Sparrendach aufgebaut wird. 
+                  br
+                  | Die 
+                  strong Außenwände 
+                  |  werden mit zusätzlicher Wärmedämmung verputzt. Über die Farbgestaltung wird noch entschieden. Sichtbare Außenwände im Sockelgeschoss evtl. mit mineralischem WDVS.
+                p
+                  i.material-icons minimize
+                  strong  Wohnungstrennwände 
+                  | werden grundsätzlich 2-schalig ausgebildet mit schalldäm-mender Mineralwolleinlage, die bis in die Fugen der Außenwände sowie zwischen die Geschossdecken durchgezogen wird.
+                p
+                  i.material-icons minimize
+                  strong  Nichttragende Innenwände 
+                  | als Ständerkonstruktion mit Schalldämm-Material und beidseitiger Beplankung aus 2 x 12,5 mm Gipskarton gespachtelt und mit Zellulosegewebe für Anstrich. Nasszellen grundsätzlich mit wasserfester Beplankung (Xella) für Fliesenbeläge.
+                
+                p
+                  i.material-icons minimize
+                  strong   Innentüren 
+                  | aus Röhrenspanplatten mit Furnier- oder Schichtstoffoberflächen in Umfassungszargen stumpf einschlagend; Schlösser aus deutscher Produktion (KFV, Schlagbaum o. glw.), Stulpen u. Schließbleche aus Edelstahl, Drückergarnituren z.B. FSB oder HEWI (Edelstahl oder Kunststoff).
+                p
+                  i.material-icons minimize
+                  strong   Wohnungseingangstüren 
+                  | als Blockrahmentüren in Holzverbundkonstruktion hoch-wärmegedämmt mit Doppelfalzdichtung, Oberflächen farbbeschichtet oder mit Metall- oder Schichtstoffbelägen. 
+                  strong Sicherheitsschließungen
+                  |  mit Mehrfachverriegelung. Schließanlage als Haupt- / Zentral-Schlüsselanlage vorzugsweise mit Wende-schlüsseln (z.B. KABA o. glw.).
+                p
+                  i.material-icons minimize
+                  strong   Fußböden 
+                  | mit Trittschalldämmung und Estrich (für evtl. Fußbodenheizung) oder Trockenaufbau. Parkettbelag oder Dielen (Mehrkosten). Nasszellen grundsätzlich mit Estrich für keramische Beläge.
+                p
+                  i.material-icons minimize
+                  |  Als
+                  strong  Anstrichmaterialien 
+                  | in Innenräumen nur mineralische Farbsysteme, z.B. KEIM-Farben wie „Biosil“, „Ecosil“, „Innotop“ oder gleichwertig.
+
+                p
+                  i.material-icons minimize
+                  strong   Das flachgeneigte (2°) Dach 
+                  | erhält als Deckung eine Titanzink-Welle. Rinnen und Regenfallrohre aus Titanzink teilw. in Sonderquerschnitten. Die 
+                  strong Flachdachflächen
+                  |  im Dachgeschoss werden intensiv begrünt, die Dachterrassen-flächen mit Holz belegt
+                p
+                  i.material-icons minimize
+                  |  Die
+                  strong  Balkonkonstruktionen 
+                  | sind im Rahmen der Tragwerksplanung zu entwickeln. Sie erhalten in jedem Fall eine Dichtung sowie Holz als Belag.
+                p
+                  i.material-icons minimize
+                  |  Alle
+                  strong  Fenster aus Holz 
+                  | mit 3-facher Isolierverglasung, U-Wert <0,9, im Erdgeschoss auf Wunsch WK 2 - Beschläge und VSG als Außenscheibe.
+
+          .card.card-plain
+            #headingThree.card-header(role="tab")
+              a(data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree")
+                | 3. Feuerungsanlagen
+                i.material-icons keyboard_arrow_down
+            #collapseThree.collapse.show(role="tabpanel" aria-labelledby="headingThree")
+              .card-body
+                | Zur Wärmeversorgung ist ein 
+                strong Pellet-Heizkessel kombiniert mit einer thermischen Solaranlage 
+                | auf dem Dach vorgesehen. Andere ökologische Heizmittel sind denkbar und werden unter Kosten- und Nachhaltigkeitsgesichtspunkten untersucht. Pelletbunker für einen Jahresbedarf (ca. 35 to). Fossile Brennstoffe sind aus ökologischen Gründen nicht gewünscht.
+
+          .card.card-plain
+            #headingFour.card-header(role="tab")
+              a(data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour")
+                | 4. Besondere Haustechnische Anlagen
+                i.material-icons keyboard_arrow_down
+            #collapseFour.collapse.show(role="tabpanel" aria-labelledby="headingFour")
+              .card-body
+                p
+                  i.material-icons minimize
+                  strong    Zentrale Heizungs- und Warmwasserversorgung; 
+                  | evtl. Niedrigenergieheizung in den Fußböden. Alle Versorgungsrohre in Edelstahl; Abwasserrohre aus Stahl; Grundleitungen aus Steinzeug oder Kunststoff - nach Möglichkeit unter der Kellerbodenplatte.
+                p
+                  i.material-icons minimize
+                  |  Regenwasserentsorgung über Zisterne im Innenhof
+                p 
+                  i.material-icons minimize
+                  |   Mechanische Entlüftung für Küchen und innenliegende Bäder über Dach.
+  
+                p
+                  i.material-icons minimize 
+                  |   KW- und WW-Zähler in jeder Wohnung, ebenso Wärmemengenzähler
+                p
+                  i.material-icons minimize
+                  strong  Sanitärobjekte und -armaturen 
+                  | aus einheimischer Produktion, z.B. Duravit, Keramag bzw. Hansgrohe oder Hansa nach Bemusterung.
+                
+                p
+                  i.material-icons minimize
+                  strong   Elektroinstallationen 
+                  | in den Wohnungen nach Absprache. Schalter und Dosen aus den Programmen von Jung, Gira o. glw.
+
+                p
+                  i.material-icons minimize
+                  strong   TV-Empfang 
+                  | nach Gesellschafterbeschluss über Satellitenschüssel oder Kabel. Insgesamt sollte die Medienversorgung hohe Mikrowellen-Strahlung vermeiden.
+                footer.blockquote-footer
+                  | Baden-Baden, April 2017
+
+
+
+
