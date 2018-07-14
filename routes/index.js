@@ -16,4 +16,14 @@ router.get('/impressum', function(req, res, next) {
   res.render('impressum', { title: 'Impressum' });
 });
 
+/* GET events. */
+router.get('/events', function(req, res, next) {
+  res.render('events', { title: 'Events' });
+});
+
+/* GET comming-soon. */
+router.get('/comming-soon', function(req, res, next) {
+  res.render('comming-soon', { title: 'Comming soon' });
+});
+
 module.exports = router;
