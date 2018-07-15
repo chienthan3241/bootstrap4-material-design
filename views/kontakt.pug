@@ -41,8 +41,19 @@ block content
               .container
                 .title
                   i.material-icons location_on
-                  |   Baugruppe Bretagne GbR Alfons - Deißler - Str. 18 77815  B ü h l
+                  |   Baugruppe Bretagne GbR Alfons-Deißler-Str. 18 77815 Bühl
+                  br
                   i.material-icons phone
                   |   07223 80 11 966
-                .row
-                  iframe(width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Baugruppe%20Bretagne%20GbR%20%20Alfons%20-%20Dei%C3%9Fler%20-%20Str.%2018%20%2077815%20%20B%20%C3%BC%20h%20l&key=AIzaSyDlb4uWwS7Y2BqIb0dPkZGgZSW0szBeKwU" allowfullscreen)
+                .row                  
+                  .mapouter
+                    .gmap_canvas
+                      iframe#gmap_canvas(width="100%" height="350" src="https://maps.google.com/maps?q=Alfons-Dei%C3%9Fler-Str.%2018%2077815%20B%C3%BChl&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0")
+                    style.
+                      .mapouter{text-align:right;height:auto;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:auto;}
+
+
+
+
+
+
