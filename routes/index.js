@@ -46,4 +46,14 @@ router.get('/gesamtansicht', function(req, res, next) {
   res.render('gesamtansicht', { title: 'Gesamtansicht' });
 });
 
+/* GET Die Wohnungen. */
+router.get('/wohnungen', function(req, res, next) {
+  res.render('wohnungen', { title: 'Die Wohnungen' });
+});
+
+/* GET Die Wohnungen. */
+router.get('/kontakt', function(req, res, next) {
+  res.render('kontakt', { title: 'Kontakt' });
+});
+
 module.exports = router;

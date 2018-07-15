@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  .main.main-raised
+    .cd-section.section.section-white
+      .cards
+        .container
+          .title
+            h2.text-warning Kontakt:
+            hr
+            h4 
+              |Rufen Sie uns an unter 
+              strong.text-danger 07223 80 11 966 
+              | oder verwenden Sie das folgende E-Mail - Kontaktformular:
+          .row
+            .col-md-6
+              .form
+                .form-group
+                  input.form-control(type="text" id="contactName" name="contactName" placeholder="Name(*)")
+                
+                .form-group
+                  input.form-control(type="email" id="contactEmail" name="contactEmail" placeholder="Email(*)")
+
+                .form-group
+                  input.form-control(type="text" id="contactTel" name="contactTel" placeholder="Telefonnummer(*)")
+                
+                .form-group
+                  textarea.form-control(placeholder="Ihre Nachrichten." rows="6")
+
+                .form-group
+                  .form-check
+                    
+                    label.form-check-label
+                      input.form-check-input(type="checkbox" id="contactCbox1" checked)
+                      | Es gilt die 
+                      a(href="/datenschutz") Datenschutzerklärung
+                      span.form-check-sign
+                        span.check
+                button.btn.btn-primary(type="submit") Absenden
+            .col-md-6
+              .container
+                .title
+                  i.material-icons location_on
+                  |   Baugruppe Bretagne GbR Alfons - Deißler - Str. 18 77815  B ü h l
+                  i.material-icons phone
+                  |   07223 80 11 966
+                .row
+                  iframe(width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Baugruppe%20Bretagne%20GbR%20%20Alfons%20-%20Dei%C3%9Fler%20-%20Str.%2018%20%2077815%20%20B%20%C3%BC%20h%20l&key=AIzaSyDlb4uWwS7Y2BqIb0dPkZGgZSW0szBeKwU" allowfullscreen)
