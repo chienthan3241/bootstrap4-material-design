@@ -1,0 +1,205 @@
+extends layout
+
+block content
+  .main.main-raised
+    #events.cd-section.section.section-gray
+      .cards
+        .container
+          .title
+            h2.text-warning Gesamtansichten
+          hr
+          .row
+            .col-lg-4.col-md-6
+              .card.bg-primary
+                .card-body
+                  h5.card-category.card-category-social
+                    i.fab.fa-accusoft
+                    |  Baugrundstück & 3D Modell
+                  h4.card-title
+                    | Die Baugrundstück & 3D Modell (siehe unten)
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs1")
+                    img.img(src="/images/gs1.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs1.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Unser Baugrundstück
+                  p.card-description
+                    | Blick nach Süden
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs2")
+                    img.img(src="/images/gs2.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs2.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Modell 3D
+                  p.card-description
+                    | Richtung von Ufgaustraße
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs3")
+                    img.img(src="/images/gs3.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs3.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Modell 3D
+                  p.card-description
+                    | Ansicht West
+            .col-lg-4.col-md-6
+              .card.bg-success
+                .card-body
+                  h5.card-category.card-category-social
+                    i.fab.fa-app-store-ios
+                    |  Schnitte und Ansichten
+                  h4.card-title
+                    | Die Ansichten:
+                  p.card-description
+                    | Nord:  von der Ufgaustraße her gesehen, Front entlang der Straße
+                  p.card-description
+                    | Süd: vom Wald her
+                  p.card-description
+                    | Ost: von der Wendeplatte Breisgaustraße
+                  p.card-description
+                    | West:  von der Ufgaustraße aus Richtung Winden
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs4")
+                    img.img(src="/images/gs4.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs4.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Schnitte und Ansichten
+                  p.card-description
+                    | Nord & Süd
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs5")
+                    img.img(src="/images/gs5.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs5.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Schnitte und Ansichten
+                  p.card-description
+                    | Ost & West
+            .col-lg-4.col-md-6
+              .card.bg-info
+                .card-body
+                  h5.card-category.card-category-social
+                    i.fas.fa-building
+                    |  Geschossfläche
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs6")
+                    img.img(src="/images/gs6.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs4.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Kellergeschoss
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs7")
+                    img.img(src="/images/gs7.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs5.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Erdgeschoss
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs8")
+                    img.img(src="/images/gs8.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs8.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info 1. Obergeschoss
+              .card.card-blog
+                .card-header.card-header-image
+                  a(href="#" data-toggle="modal" data-target="#gs9")
+                    img.img(src="/images/gs9.jpg")
+                    .colored-shadow(style='background-image: url("/images/gs9.jpg"); opacity: 1;')
+                .card-body
+                  h6.card-category.text-info Dachgeschoss
+  
+
+  #gs1.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Unser Baugrundstück: Blick nach Süden
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs1.jpg")
+  #gs2.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Modell 3D: Richtung von Ufgaustraße
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs2.jpg")
+  #gs3.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Modell 3D: Ansicht West
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs3.jpg")
+
+  #gs4.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Schnitte und Ansichten: Nord & Süd
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs4.jpg")
+  #gs5.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Schnitte und Ansichten: Ost & West
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs5.jpg")
+
+  #gs6.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Kellergeschoss
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs6.jpg")
+
+  #gs7.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Erdgeschoss
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs7.jpg")
+  #gs8.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 1. Obergeschoss
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs8.jpg")
+  #gs9.modal.fade(tabindex="-1" role="")
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          h4 Dachgeschoss
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") ×
+        .modal-body
+          img(src="/images/gs9.jpg")
+
+    
+
+
+  

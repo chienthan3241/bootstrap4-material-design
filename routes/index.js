@@ -36,4 +36,14 @@ router.get('/baubeschreibung', function(req, res, next) {
   res.render('baubeschreibung', { title: 'Baubeschreibung' });
 });
 
+/* GET lageplan. */
+router.get('/lageplan', function(req, res, next) {
+  res.render('lageplan', { title: 'Lageplan' });
+});
+
+/* GET gesamtansicht. */
+router.get('/gesamtansicht', function(req, res, next) {
+  res.render('gesamtansicht', { title: 'Gesamtansicht' });
+});
+
 module.exports = router;
