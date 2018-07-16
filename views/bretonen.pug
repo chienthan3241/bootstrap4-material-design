@@ -1,0 +1,116 @@
+extends layout
+
+block content
+  .main.main-raised
+    .cd-section.section
+      .container
+        .title
+          h3 Magentacloud Data
+          hr
+        
+        #accordion.card-collapse(role="tablist" aria-multiselectable="true")
+          each val, valIndex in dirArr.children
+            .card.card-plain
+              .card-header(role="tab" id="heading" + valIndex)
+                strong
+                  a(data-toggle="collapse" data-parent="#accordion" href="#collapse" + valIndex aria-expanded="false" aria-controls="collapse" + valIndex) 
+                    | #{val.name}
+                    i.material-icons keyboard_arrow_down
+              .collapse(id="collapse" + valIndex)
+                .container
+                  .card-body
+                    each subval, subvalIndex in val.children
+                      if subval.type == 'file'
+                        if subval.extension == '.pdf'
+                          i.far.fa-file-pdf
+                        else if subval.extension == '.docx'
+                          i.far.fa-file-word
+                        else if subval.extension == '.jpg'
+                          i.far.fa-file-image
+                        else
+                          i.far.fa-file
+                        a.text-info(href="/bretonen/download/"+subval.path)
+                          | #{subval.name}
+                        br  
+                      else
+                        .card.card-collapse
+                          .card-header(role="tab" id="heading" + valIndex + subvalIndex)
+                            i.fas.fa-sitemap
+                            a(data-toggle="collapse" href="#collapse" + valIndex + subvalIndex aria-expanded="false" aria-controls="collapse" + valIndex + subvalIndex) 
+                              | #{subval.name}
+                              i.material-icons keyboard_arrow_down
+                          .collapse(id="collapse" + valIndex + subvalIndex)
+                            .container
+                              .card-body
+                                each subval2, subvalIndex2 in subval.children
+                                  if subval2.type == 'file'
+                                    if subval2.extension == '.pdf'
+                                      i.far.fa-file-pdf
+                                    else if subval2.extension == '.docx'
+                                      i.far.fa-file-word
+                                    else if subval2.extension == '.jpg'
+                                      i.far.fa-file-image
+                                    else
+                                      i.far.fa-file
+                                    a.text-info(href="/bretonen/download/"+subval2.path)
+                                      | #{subval2.name}
+                                    br 
+                                  else
+                                    .card.card-collapse
+                                      .card-header(role="tab" id="heading" + valIndex + subvalIndex + subvalIndex2)
+                                        i.fas.fa-sitemap
+                                        a(data-toggle="collapse" href="#collapse" + valIndex + subvalIndex + subvalIndex2 aria-expanded="false" aria-controls="collapse" + valIndex + subvalIndex + subvalIndex2) 
+                                          | #{subval2.name}
+                                          i.material-icons keyboard_arrow_down
+                                      .collapse(id="collapse" + valIndex + subvalIndex + subvalIndex2)
+                                        .container
+                                          .card-body
+                                            each subval3, subvalIndex3 in subval2.children
+                                              if subval3.type == 'file'
+                                                if subval3.extension == '.pdf'
+                                                  i.far.fa-file-pdf
+                                                else if subval3.extension == '.docx'
+                                                  i.far.fa-file-word
+                                                else if subval3.extension == '.jpg'
+                                                  i.far.fa-file-image
+                                                else
+                                                  i.far.fa-file
+                                                a.text-info(href="/bretonen/download/"+subval3.path)
+                                                  | #{subval3.name}
+                                                br 
+                                              else
+                                                .card.card-collapse
+                                                  .card-header(role="tab" id="heading" + valIndex + subvalIndex + subvalIndex2 + subvalIndex3)
+                                                    i.fas.fa-sitemap
+                                                    a(data-toggle="collapse" href="#collapse" + valIndex + subvalIndex + subvalIndex2 + subvalIndex3 aria-expanded="false" aria-controls="collapse" + valIndex + subvalIndex + subvalIndex2 + subvalIndex3) 
+                                                      | #{subval3.name}
+                                                      i.material-icons keyboard_arrow_down
+                                                  .collapse(id="collapse" + valIndex + subvalIndex + subvalIndex2 + subvalIndex3)
+                                                    .container
+                                                      .card-body
+                                                        each subval4, subvalIndex4 in subval3.children
+                                                          if subval4.type == 'file'
+                                                            if subval4.extension == '.pdf'
+                                                              i.far.fa-file-pdf
+                                                            else if subval4.extension == '.docx'
+                                                              i.far.fa-file-word
+                                                            else if subval4.extension == '.jpg'
+                                                              i.far.fa-file-image
+                                                            else
+                                                              i.far.fa-file
+                                                            a.text-info(href="/bretonen/download/"+subval4.path)
+                                                              | #{subval4.name}
+                                                            br 
+                                                          else
+                                                            | #{subval4.name}
+                                                            br
+
+
+
+
+
+
+
+
+
+
