@@ -43,3 +43,6 @@ ul.navbar-nav {
 .modal-dialog .modal-body img {
   width: 100%;
   height: auto; }
+
+.card.card-nav-tabs .card-body .tab-content .row {
+  margin-top: 30px; }

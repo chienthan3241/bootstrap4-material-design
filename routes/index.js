@@ -56,4 +56,9 @@ router.get('/kontakt', function(req, res, next) {
   res.render('kontakt', { title: 'Kontakt' });
 });
 
+/* GET Die Wohnungen. */
+router.get('/cookie-policy', function(req, res, next) {
+  res.render('cookie-policy', { title: 'Cookie-policy' });
+});
+
 module.exports = router;

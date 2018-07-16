@@ -110,7 +110,8 @@ gulp.task('js', function() {
         './node_modules/material-kit/assets/js/plugins/bootstrap-datetimepicker.js',
         './node_modules/material-kit/assets/js/plugins/nouislider.min.js',
         './node_modules/material-kit/assets/js/plugins/jquery.sharrre.js',
-        './node_modules/material-kit/assets/js/material-kit.min.js'
+        './node_modules/material-kit/assets/js/material-kit.min.js',
+        //'./node_modules/jquery-eu-cookie-law-popup/js/jquery-eu-cookie-law-popup.js'
         ])
         .pipe(gulp.dest("./public/javascripts"))
         .pipe(browserSync.stream());
@@ -118,7 +119,8 @@ gulp.task('js', function() {
 
 gulp.task('css', function () {
     gulp.src([
-        './node_modules/material-kit/assets/css/material-kit.min.css'
+        './node_modules/material-kit/assets/css/material-kit.min.css',
+        './node_modules/jquery-eu-cookie-law-popup/css/jquery-eu-cookie-law-popup.css'
         ])
         .pipe(gulp.dest('./public/stylesheets'))
         .pipe(browserSync.stream());

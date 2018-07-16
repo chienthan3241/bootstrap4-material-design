@@ -6,8 +6,9 @@ html(ng-app="app")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous")
     //link(rel="stylesheet", href="/stylesheets/material-kit.min.css")
     link(rel="stylesheet", href="/stylesheets/material-kit-pro.min.css")
+    link(rel="stylesheet", href="/stylesheets/jquery-eu-cookie-law-popup.css")
     link(rel="stylesheet", href="/stylesheets/style.css")
-  body
+  body.eupopup.eupopup-bottom
 
     include nav
     include slider
@@ -49,6 +50,8 @@ script(type="text/javascript" src="/javascripts/jquery.sharrre.js")
 script(type="text/javascript" src="/javascripts/material-kit-pro/material-kit-pro.min.js")
 
 //=========================================================
+//cookie GDPR
+//script(type="text/javascript" src="/javascripts/jquery-eu-cookie-law-popup.js")
 // angular
 script(type="text/javascript" src="/javascripts/angular.js")
 // lodash

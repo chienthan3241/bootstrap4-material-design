@@ -10,7 +10,7 @@ const tree = dirTree('./public/cloud', {extensions:/\.(pdf|docx|jpg|dxf|dwg)/});
 /* GET wir bretonen. */
 router.get('/', function(req, res, next) {
 	//console.log(path.resolve(rootdir));
-	console.log(tree.children[0]);
+	console.log(tree);
 	res.render('bretonen', { title: 'Wir Bretonen', dirArr: tree });
 	
 });
@@ -18,7 +18,6 @@ router.get('/', function(req, res, next) {
 /* GET wir bretonen. */
 router.get('/download/:file(*)', function(req, res) {
 	var file = req.params.file;
-	console.log(path.join('./',file));
 	res.download(path.join('./',file));
 });
 
