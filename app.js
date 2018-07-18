@@ -1,5 +1,8 @@
 var createError = require('http-errors');
 var express = require('express');
+var session = require('express-session');
+var MemoryStore = require('memorystore')(session);
+var flash = require('express-flash')
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -18,7 +21,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({secret: 'somesessionsecretkey', store: new MemoryStore({checkPeriod: 600000})}));
+app.use(flash());
 
+app.use(function(req,res,next){
+    res.locals.session = req.session;
+    next();
+});
 app.use('/', indexRouter);
 app.use('/bretonen', privatRouter);
 

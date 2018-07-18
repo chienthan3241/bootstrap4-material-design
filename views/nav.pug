@@ -31,4 +31,17 @@ nav#sectionsNav.navbar.navbar-color-on-scroll.fixed-top.navbar-expand-lg.navbar-
           a.nav-link(href="/kontakt") Kontakt
         li.nav-item
           a.nav-link(href="/events") Events
+        li.nav-item.dropdown
+          a.dropdown-toggle.nav-link(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            i.material-icons account_circle
+            if session.authenticated == true
+              |  Hallo #{session.username}
+            else 
+              |  Login
+          .dropdown-menu
+            if session.authenticated == true
+              a.dropdown-item(href="/logout") Logout
+            else
+              a.dropdown-item(href="/login") Login
+
         
